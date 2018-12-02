@@ -1,0 +1,16 @@
+.radio {
+  width: inherit;
+  display: flex;
+
+  /* justify-content: center; */
+  align-items: center;
+  width: 100%;
+}
+
+.radio > *{
+  flex: 1;
+}
+
+.radio p {
+  text-align: left;
+}
