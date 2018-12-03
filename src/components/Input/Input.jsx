@@ -1,11 +1,11 @@
 import React from 'react'
-import './radio.css'
+import './input.css'
 
 
 
-const Radio = (props) => {
+const Input = (props) => {
   const {
-    children,
+    type,
     label,
     value,
     id,
@@ -14,18 +14,18 @@ const Radio = (props) => {
   } = props;
 
   return(
-    <div className='radio'>
+    <div className='input' style={type==='radio' ? {flexDirection: 'row-reverse'} : {}}>
+      <p>{label}</p>
       <input
         checked={checked}
-        type='radio'
+        type={type}
         value={value}
         onChange={handleChange(id)}
       />
-      <p className='label'>{label}</p>
     </div>
   )
 
 
 }
 
-export default Radio;
+export default Input;

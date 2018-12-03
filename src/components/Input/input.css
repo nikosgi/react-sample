@@ -1,13 +1,18 @@
-.textField {
+.input {
   width: inherit;
   display: flex;
-  flex-direction: column;
+
   justify-content: center;
   align-items: center;
   width: 100%;
 }
 
-.textField input {
-  width: 80%;
+.input > *{
+  flex-basis: 40%;
+}
+
+
+.input input {
+  width: 50%;
 
 }
